@@ -1,6 +1,5 @@
 import { useGetPokemonByNameQuery } from "../../features/api/apiSlice";
 import Menubar from "../common/Menubar";
-import Counters from "../FlightsData/Counters";
 import FlightData from "../FlightsData/FlightData";
 
 
@@ -15,7 +14,7 @@ const Service = () => {
       <Menubar/>
       <FlightData/>
 
-      <Counters/>
+    
     </div>
     </div>
   );
