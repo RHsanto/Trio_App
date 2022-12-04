@@ -20,7 +20,7 @@ const FlightData = () => {
               <p>Launch year : {data?.launch_year}</p>
             </div>
             <div className="card-actions">
-              <button className="btn btn-primary">Details </button>
+              <button className="btn btn-primary">Learn More ... </button>
             </div>
           </div>
         </div>
