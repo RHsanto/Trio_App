@@ -1,16 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useGetPokemonByNameQuery } from "../../features/api/apiSlice";
+import { useGetPokemonByNameQuery, useGetSingleFlightQuery } from "../../features/api/apiSlice";
 
 const FlightData = () => {
   const { data: flightData } = useGetPokemonByNameQuery("");
-  console.log(flightData);
+  const{data:singleData}=useGetSingleFlightQuery("1")
+  // console.log(flightData);
+  console.log(singleData);
   return (
     <div className="py-11">
       
       <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
         {flightData?.map((data: any) => (
-          <div className="card bg-base-100 shadow-xl">
+          <div key={data?.mission_name} className="card bg-base-100 shadow-xl">
           <figure className="px-4 pt-4">
             <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl" />
           </figure>
