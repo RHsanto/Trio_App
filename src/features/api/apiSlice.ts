@@ -7,12 +7,15 @@ export const serviceApi = createApi({
   reducerPath: 'serviceApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://api.spacexdata.com/v3/' }),
   endpoints: (builder) => ({
-    getPokemonByName: builder.query<any, any>({
+    getPokemonByName: builder.query({
       query: () => 'launches',
     }),
+    getSingleFlight:builder.query({
+      query: (flight_number) => `launches/${flight_number}`,
+    })
   }),
 })
 
 // Export hooks for usage in function components, which are
 // auto-generated based on the defined endpoints
-export const { useGetPokemonByNameQuery } = serviceApi
+export const { useGetPokemonByNameQuery,useGetSingleFlightQuery } = serviceApi
