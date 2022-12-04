@@ -11,7 +11,7 @@ const FlightData = () => {
   if(isError)return <>{error}</>
   if(isLoading)
   return(
-    <div className=" text-center pt-10">
+    <div className=" text-center py-10">
      <button  className="btn btn-primary" >Processing...</button>
   </div>
   )

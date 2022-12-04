@@ -1,6 +1,11 @@
+import { useParams } from "react-router-dom";
+import { useGetSingleFlightQuery } from "../../features/api/apiSlice";
 
 const Service = () => {
 
+  const {id}=useParams();
+  const{data:singleData}=useGetSingleFlightQuery(id)
+  console.log(singleData);
 
   return (
     <div className="bg-gray-200">
