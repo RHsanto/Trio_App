@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Link } from "react-router-dom";
 import { useGetPokemonByNameQuery, useGetSingleFlightQuery } from "../../features/api/apiSlice";
 
 const FlightData = () => {
@@ -31,7 +32,9 @@ const FlightData = () => {
               <p>Launch year : {data?.launch_year}</p>
             </div>
             <div className="card-actions">
-              <button className="btn btn-primary">Learn More ... </button>
+             <Link to={`/${data?.flight_number}`}>
+             <button className="btn btn-primary">Learn More ... </button>
+             </Link>
             </div>
           </div>
         </div>
