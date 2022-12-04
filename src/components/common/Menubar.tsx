@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Menubar = () => {
   return (
     <div className='bg-indigo-600 '>
           <div className="navbar md:container md:mx-auto  text-light">
   <div className="flex-1">
-    <a className="btn btn-ghost text-gray-50 normal-case text-xl">daisyUI</a>
+   <Link to='/'> <a className="btn btn-ghost text-gray-50 normal-case text-xl">daisyUI</a></Link>
   </div>
   <div className="flex-none gap-2">
     <div className="form-control">
