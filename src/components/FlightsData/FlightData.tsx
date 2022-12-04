@@ -7,6 +7,7 @@ const FlightData = () => {
   console.log(flightData);
   return (
     <div className="py-11">
+      
       <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
         {flightData?.map((data: any) => (
           <div className="card bg-base-100 shadow-xl">
