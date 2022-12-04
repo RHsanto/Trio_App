@@ -3,13 +3,21 @@
 import { useGetPokemonByNameQuery, useGetSingleFlightQuery } from "../../features/api/apiSlice";
 
 const FlightData = () => {
-  const { data: flightData } = useGetPokemonByNameQuery("");
+  const { data: flightData,error, isLoading ,isError } = useGetPokemonByNameQuery("");
   const{data:singleData}=useGetSingleFlightQuery("1")
   // console.log(flightData);
   console.log(singleData);
+  if(isError)return <>{error}</>
+  if(isLoading)
+  return(
+    <div className=" text-center pt-10">
+     <button  className="btn btn-primary" >Processing...</button>
+  </div>
+  )
+  
   return (
     <div className="py-11">
-      
+      <h1 className="text-4xl text-center pb-10">Here All Launch Flight Card</h1>
       <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
         {flightData?.map((data: any) => (
           <div key={data?.mission_name} className="card bg-base-100 shadow-xl">

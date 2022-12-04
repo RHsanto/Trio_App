@@ -1,19 +1,10 @@
 
-import Menubar from "../common/Menubar";
-import FlightData from "../FlightsData/FlightData";
-
-
 const Service = () => {
 
 
   return (
     <div className="bg-gray-200">
-      <Menubar/>
-    <div className="md:container md:mx-auto">
-      <FlightData/>
-
-    
-    </div>
+     <h1 className="text-3xl">Single Data</h1>
     </div>
   );
 };
