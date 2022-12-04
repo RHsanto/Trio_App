@@ -5,7 +5,7 @@ import { useGetSingleFlightQuery } from "../../features/api/apiSlice";
 const Service = () => {
   const { id } = useParams();
   const { data: singleData } = useGetSingleFlightQuery(id);
-  console.log(singleData?.links);
+  // console.log(singleData?.links);
 
   return (
     <div className=" container mx-auto mt-7">
@@ -44,6 +44,10 @@ const Service = () => {
             <a className="text-blue-700" target="_blank" href={singleData?.links?.wikipedia}>
               {" "}
               wikipedia
+            </a> || 
+            <a className="text-blue-700" target="_blank" href={singleData?.links?.article_link}>
+              {" "}
+              Article
             </a>
 
             <img className="w-20 mt-4" src={singleData?.links?.mission_patch_small} alt="img" />
