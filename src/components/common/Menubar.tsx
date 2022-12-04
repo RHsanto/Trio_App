@@ -4,8 +4,8 @@ import React from 'react';
 
 const Menubar = () => {
   return (
-    <div className='bg-indigo-600'>
-          <div className="navbar  text-light">
+    <div className='bg-indigo-600 '>
+          <div className="navbar md:container md:mx-auto  text-light">
   <div className="flex-1">
     <a className="btn btn-ghost text-gray-50 normal-case text-xl">daisyUI</a>
   </div>

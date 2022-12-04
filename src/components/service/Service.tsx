@@ -10,8 +10,8 @@ const Service = () => {
   console.log(data);
   return (
     <div className="bg-gray-200">
-    <div className="md:container md:mx-auto">
       <Menubar/>
+    <div className="md:container md:mx-auto">
       <FlightData/>
 
     
