@@ -15,9 +15,12 @@ const FlightData = () => {
           </figure>
           <div className="card-body items-center text-center">
             <h2 className="card-title">{data?.mission_name}</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>{data?.details?.slice(0,100)}</p>
+            <div className="flight-info">
+              <p>Launch year : {data?.launch_year}</p>
+            </div>
             <div className="card-actions">
-              <button className="btn btn-primary">Buy Now</button>
+              <button className="btn btn-primary">Details </button>
             </div>
           </div>
         </div>
