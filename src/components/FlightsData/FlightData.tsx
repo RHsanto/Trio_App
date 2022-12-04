@@ -7,20 +7,20 @@ const FlightData = () => {
   console.log(flightData);
   return (
     <div className="py-11">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
         {flightData?.map((data: any) => (
-          <div className="card lg:card-side bg-base-100 shadow-xl">
-            <figure>
-              <img src="https://placeimg.com/400/400/arch" alt="Album" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">New album is released!</h2>
-              <p>Click the button to listen on Spotiwhy app.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Listen</button>
-              </div>
+          <div className="card bg-base-100 shadow-xl">
+          <figure className="px-4 pt-4">
+            <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl" />
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title">{data?.mission_name}</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div className="card-actions">
+              <button className="btn btn-primary">Buy Now</button>
             </div>
           </div>
+        </div>
         ))}
       </div>
     </div>
