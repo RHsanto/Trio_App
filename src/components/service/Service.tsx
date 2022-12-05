@@ -13,7 +13,7 @@ const Service = () => {
         <div className="card-img w-full border">
           <img className="w-full h-96" src={singleData?.links?.mission_patch} alt="Album" />
         </div>
-        <div className="p-6">
+        <div className="p-6 ">
           <h2 className="card-title text-3xl mb-3">{singleData?.mission_name}</h2>
           <p className="mb-6">{singleData?.details}</p>
 

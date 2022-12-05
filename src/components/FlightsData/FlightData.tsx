@@ -36,7 +36,7 @@ const FlightData = () => {
             <div className="form-control">
               <input onChange={event => {
                 setSearchResult(event?.target?.value)
-              }} type="text" placeholder="Search" className="input input-bordered" />
+              }} type="text" placeholder="Search By Rocket Name" className="input input-bordered" />
             </div>
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
