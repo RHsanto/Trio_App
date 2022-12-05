@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useGetSingleFlightQuery } from "../../features/api/apiSlice";
 
 const Service = () => {
@@ -51,6 +51,9 @@ const Service = () => {
             </a>
 
             <img className="w-20 mt-4" src={singleData?.links?.mission_patch_small} alt="img" />
+            <div className="card-actions justify-end">
+             <Link to='/'><button className="btn btn-primary">Go to Home</button></Link>
+             </div>
           </p>
         </div>
       </div>
