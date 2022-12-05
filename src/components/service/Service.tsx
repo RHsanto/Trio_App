@@ -9,7 +9,7 @@ const Service = () => {
 
   return (
     <div className=" container mx-auto mt-7">
-      <div className=" flex bg-base-100 shadow-xl border">
+      <div className=" lg:flex m-6 bg-base-100 shadow-xl border">
         <div className="card-img w-full border">
           <img className="w-full h-96" src={singleData?.links?.mission_patch} alt="Album" />
         </div>

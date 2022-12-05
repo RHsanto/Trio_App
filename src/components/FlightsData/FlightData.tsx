@@ -66,13 +66,14 @@ const FlightData = () => {
         </div>
       </div>
       <div className="md:container md:mx-auto py-11">
-        <h1 className="text-4xl text-center pb-10">Here All Launch Mission Info Card</h1>
+        <h1 className="text-4xl text-center pb-10"> All Launch Mission Info Card</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-6">
           {flightData && 
           flightData.filter((items:any)=>{
             if(searchResult === ""){
               return items;
-            }else if(
+            }
+            else if(
               items?.mission_name?.toLowerCase().includes(searchResult.toLowerCase()) 
               ||
               items?.launch_year?.toLowerCase().includes(searchResult.toLowerCase())
