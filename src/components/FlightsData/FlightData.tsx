@@ -29,7 +29,7 @@ const FlightData = () => {
           <div className="flex-1">
             <Link to="/">
               {" "}
-              <a className="btn btn-ghost text-gray-50 normal-case text-xl">daisyUI</a>
+              <a className="btn btn-ghost text-gray-50 normal-case text-xl">NASA</a>
             </Link>
           </div>
           <div className="flex-none gap-2">
